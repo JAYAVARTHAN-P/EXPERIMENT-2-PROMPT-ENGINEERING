@@ -1,60 +1,56 @@
-# EXP-2-PROMPT-ENGINEERING-
+# EXP-2: Prompt Engineering
+## Aim
 
-## Aim: 
-Comparative Analysis of different types of Prompting patterns and explain with Various Test Scenarios
+To perform a comparative analysis of different prompting patterns and evaluate how large language models respond to broad/unstructured prompts versus refined/clear prompts across multiple scenarios.
 
-Experiment:
-Test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios. 
-Analyze the quality, accuracy, and depth of the generated responses.
+## Algorithm
 
+1. Select prompt patterns:
 
-## Algorithm:
-There are several prompting styles used in LLMs:
+   * Broad / Unstructured Prompt
 
-Zero-Shot Prompting
+   * Refined / Structured Prompt
 
-Directly ask the model without examples.
+2. Define test scenarios: Summarization, Problem-Solving, Creative Writing, Coding.
 
-Example: “Translate the following sentence into French: I love learning AI.”
+3. Provide inputs to the model using both prompt types.
 
-Few-Shot Prompting
+4. Collect and record outputs.
 
-Provide examples to set context.
+5. Evaluate based on accuracy, depth, and relevance.
 
-Example: “English: Hello → French: Bonjour. English: Thank you → French: Merci. English: I love learning AI → French: …”
+6. Compare and conclude findings.
 
-Chain-of-Thought (CoT) Prompting
+## Experiment Scenarios
+### Scenario 1: Summarization
 
-Encourage step-by-step reasoning.
+Unstructured Prompt: Tell me about AI.
 
-Example: “Solve this math problem step by step: If a pen costs ₹10 and a book costs ₹50, what is the total cost of 2 pens and 3 books?”
+Refined Prompt: Summarize Artificial Intelligence in under 100 words focusing on its applications in healthcare.
 
-Instruction-Based Prompting
+### Scenario 2: Problem-Solving
 
-Clear instructions on format and detail.
+Unstructured Prompt: Solve this math problem.
 
-Example: “Summarize this article in 3 bullet points, highlighting key arguments and examples.”
+Refined Prompt: Solve 25x + 10 = 85 and show step-by-step calculation.
 
-Role-Based Prompting
+### Scenario 3: Creative Writing
 
-Assign a role/persona to the model.
+Unstructured Prompt: Write a story.
 
-Example: “You are a financial advisor. Suggest a diversified portfolio for a 25-year-old investor with moderate risk tolerance.”
+Refined Prompt: Write a 100-word short story about a robot who learns empathy.
 
-Broad/Unstructured Prompting
+### Scenario 4: Coding Task
 
-Vague or incomplete instructions.
+Unstructured Prompt: Write code for sorting.
 
-Example: “Tell me something about finance.”
+Refined Prompt: Write a Python program to sort a list of integers in ascending order using Bubble Sort algorithm.
 
-## Output
-[Exp2.pdf](https://github.com/user-attachments/files/22050113/Exp2.pdf)
+## Sample Output Comparison
+<img width="873" height="371" alt="image" src="https://github.com/user-attachments/assets/b51416f4-1b16-4365-b4e5-2c4b6df28bd4" />
+
 
 ## Result
-This experiment demonstrates that the way a prompt is structured strongly impacts the output of Generative AI systems.
-Broad prompts → produce vague, shallow, and sometimes irrelevant responses.
-Instructional, Role-based, and CoT prompts → significantly improve accuracy, depth, and clarity.
-Few-shot prompting adds adaptability, while zero-shot is useful for quick queries.
 
-# Final Insight: 
-  Prompt engineering is a critical skill. For high-quality results, prompts should be clear, contextual, and structured, often combining instructional + role-based + CoT styles for maximum effectiveness.
+Refined prompting consistently produced better, accurate, and more structured outputs than unstructured prompts.
+This shows that Prompt Engineering is crucial for optimizing responses from LLMs.
